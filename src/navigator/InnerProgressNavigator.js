@@ -5,7 +5,7 @@ import { Text, TouchableOpacity, View } from "react-native";
 
 import IconFontAwesome from "react-native-vector-icons/FontAwesome";
 
-import { LinearGradient } from "expo";
+import { LinearGradient } from "expo-linear-gradient";
 import { createStackNavigator } from "react-navigation";
 
 const fontLoaded = true;
@@ -17,7 +17,7 @@ export const InnerProgressStackNavigator = createStackNavigator({
       headerMode: "float",
       gesturesEnabled: false,
       //     // headerTitle: navigation?.state?.params?.date.toString()
-      headerTitle: formatYYYY_MM_DD_HHMMFromParams(navigation?.state?.params),
+      headerTitle: formatYYYY_MM_DD_HHMMFromParams(navigation.state.params),
       //     // `${navigation?.state?.params?.year.toString()}-${navigation?.state?.params?.month.toString()}-${navigation?.state?.params?.day.toString()} ${navigation?.state?.params?.hour.toString()}:${navigation?.state?.params?.minute.toString()}`,
       //     // header: null
       //     headerBackTitle: "Progress Page",
@@ -60,7 +60,7 @@ export const InnerProgressStackNavigator = createStackNavigator({
         <TouchableOpacity
           style={{ marginRight: 30 }}
           onPress={() => {
-            navigation?.state?.params?.showDeleteConfirmModalInDisplayPicture({
+            navigation.state.params.showDeleteConfirmModalInDisplayPicture({
               showReminder: true,
               reminderTitle: "Delete",
               reminderContent: "Do you want to delete this photo？",

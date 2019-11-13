@@ -5,7 +5,7 @@ import { EditHistory } from "../page/EditHistory";
 import { CurrentWorkout } from "../page/CurrentWorkout";
 import { View, Text, TouchableOpacity, Platform } from "react-native";
 import IconFontAwesome from "react-native-vector-icons/FontAwesome";
-import { LinearGradient } from "expo";
+import { LinearGradient } from 'expo-linear-gradient'
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import { formatYYYYMMDDFromDate } from "../utils/formatMonthandDay";
 

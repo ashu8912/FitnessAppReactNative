@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { IconFont } from "@expo/vector-icons";
-import { LinearGradient } from "expo";
+import { LinearGradient } from 'expo-linear-gradient'
 import IconFontAwesome from "react-native-vector-icons/FontAwesome";
 
 export class CongratsPage extends Component {

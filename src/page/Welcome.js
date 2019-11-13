@@ -8,7 +8,7 @@ import {
   StatusBar,
 } from "react-native";
 
-import { LinearGradient } from "expo";
+import { LinearGradient } from 'expo-linear-gradient'
 import Button from "apsl-react-native-button";
 import { Fonts } from "../utils/Fonts";
 
@@ -26,7 +26,7 @@ class Welcome extends Component {
       <LinearGradient colors={["#4a168c", "#880e4f"]} style={styles.container}>
         <View style={styles.header}>
           {this.props.fontLoaded ? (
-            <Text style={styles.headerText}>Joe's Fitness</Text>
+            <Text style={styles.headerText}>Fit Me</Text>
           ) : null}
         </View>
         <View style={styles.middle}>

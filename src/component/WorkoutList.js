@@ -11,9 +11,8 @@ import {
 import Button from "apsl-react-native-button";
 // import {Icon} from 'expo';
 import Icon from "react-native-vector-icons/MaterialIcons";
-import FontAwesomeIcon from "react-native-vector-icons/FontAwesome";
 import { connect } from "react-redux";
-import { IconFont } from "@expo/vector-icons";
+//import { Icon } from "@expo/vector-icons";
 
 import {
   addCategoryToEditLibraryAction,
@@ -68,7 +67,7 @@ export class _WorkoutList extends Component {
           await this.setState({
             cardioMinutes: 0,
           });
-          if (sets > weightRepsDataArr?.length) {
+          if (sets > weightRepsDataArr.length) {
             await this.setState({ time });
             // await this.setState({showAddWeightModal: true});
             await this.props.setAddWeightModalVisibility(true);
@@ -106,7 +105,7 @@ export class _WorkoutList extends Component {
             </Text>
           </View>
         </View>
-        {weightRepsDataArr?.map((item, index) => {
+        {weightRepsDataArr.map((item, index) => {
           if (!item.weight && !item.reps) {
             weightRepsDataArr.splice(index, 1);
           } else {
@@ -125,7 +124,7 @@ export class _WorkoutList extends Component {
             );
           }
         })}
-        {sets > weightRepsDataArr?.length && (
+        {sets > weightRepsDataArr.length && (
           <View style={{ ...styles.listItem, height: 25 }}>
             <Text
               style={{
@@ -263,9 +262,9 @@ export class _WorkoutList extends Component {
             style={styles.plusButton}
             textStyle={styles.plus}
             children={
-              <IconFont name="Gym2" size={50} color="white" key={"gym"} />
+              <Icon name="Gym2" size={50} color="white" key={"gym"} />
             }
-          />
+          ></Button>
           {/*<Icon name="fitness-center" size={50} color="white" key="add"/>*/}
         </View>
         <Text style={styles.bigText}>Manual Workout</Text>
@@ -288,7 +287,7 @@ export class _WorkoutList extends Component {
             style={styles.plusButton}
             textStyle={styles.plus}
             children={
-              <IconFont name="Edit" size={50} color="white" key={"edit"} />
+              <Icon name="Edit" size={50} color="white" key={"edit"} />
             }
           />
           {/*<FontAwesomeIcon name="pencil" size={50} color="white" key="add"/>*/}
@@ -322,7 +321,7 @@ export class _WorkoutList extends Component {
             style={styles.plusButton}
             textStyle={styles.plus}
             children={
-              <IconFont
+              <Icon
                 name="Library"
                 size={50}
                 color="white"
@@ -359,7 +358,7 @@ export class _WorkoutList extends Component {
             style={styles.plusButton}
             textStyle={styles.plus}
             children={
-              <IconFont name="Alarm" size={50} color="white" key={"alarm"} />
+              <Icon name="Alarm" size={50} color="white" key={"alarm"} />
             }
           />
           {/*<Icon name="alarm" size={50} color="white" key="add"/>*/}

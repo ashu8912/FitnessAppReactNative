@@ -16,7 +16,7 @@ import {
   addCategoryToEditLibraryAction,
   deleteCategoryFromEditLibraryAction,
 } from "../store/actions";
-import { LinearGradient } from "expo";
+import { LinearGradient } from "expo-linear-gradient";
 import { connect } from "react-redux";
 import { ReminderModal } from "../component/ReminderModal";
 import LoadingUtil from "../utils/LoadingUtil";

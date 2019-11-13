@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, ScrollView } from "react-native";
 import { connect } from "react-redux";
 // import {LinearGradient} from "expo";
 import Button from "apsl-react-native-button";
+import { LinearGradient } from "expo-linear-gradient";
 import { TopBar } from "../component/TopBar";
 import { ReminderModal } from "../component/ReminderModal";
 import {
@@ -18,15 +19,13 @@ import {
   addWeightToExercisesAction,
   editWeightRepsInWorkoutAction,
   deleteExerciseFromWorkoutListAction,
-  setAddCategoryModalForLibraryVisibilityAction,
 } from "../store/actions";
 
 import { WorkoutList } from "../component/WorkoutList";
 import { ExerciseModal } from "./ExerciseModal";
 import { formatMonthandDay } from "../utils/formatMonthandDay";
 import LoadingUtil from "../utils/LoadingUtil";
-import { LinearGradient } from "expo";
-import { currentWorkoutModals } from "../store/reducers/currentWorkoutModals";
+
 
 class _CurrentWorkout extends Component {
   static defaultProps = {

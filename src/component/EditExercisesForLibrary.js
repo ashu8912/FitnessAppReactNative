@@ -1,7 +1,7 @@
+/* eslint-disable react/prop-types */
 import React, { Component } from "react";
-import { View, Text, StyleSheet } from "react-native";
 import { WorkoutList } from "./WorkoutList";
-import { LinearGradient } from "expo";
+import { LinearGradient } from "expo-linear-gradient";
 import {
   addExerciseSetToCurrentWorkoutAction,
   updateEmptyAction,
@@ -28,7 +28,7 @@ class _EditExercisesForLibrary extends Component {
   }
 
   render() {
-    const navProps = this.props?.navigation?.state?.params;
+    const navProps = this.props.navigation.state.params;
     return (
       <LinearGradient colors={["#1b98d9", "#57c5b8"]} style={{ flex: 1 }}>
         {/*<Text>{navProps.selectedExerciseCategory}</Text>*/}

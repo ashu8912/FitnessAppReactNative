@@ -1,6 +1,6 @@
 import React from "react";
 import { CustomWorkout } from "../page/CustomWorkout";
-import { LinearGradient } from "expo";
+import { LinearGradient } from "expo-linear-gradient";
 import { EditLibrary } from "../page/EditLibrary";
 import { Platform, Text, TouchableOpacity, View } from "react-native";
 import IconFontAwesome from "react-native-vector-icons/FontAwesome";
@@ -129,7 +129,7 @@ export const InnerCurrentWorkoutStackNavigator = createStackNavigator({
         <TouchableOpacity
           style={{ marginRight: 30 }}
           onPress={() => {
-            navigation?.state?.params.setAddCategoryModalForLibraryVisibility(
+            navigation.state.params.setAddCategoryModalForLibraryVisibility(
               true
             );
           }}>

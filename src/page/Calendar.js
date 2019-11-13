@@ -11,7 +11,7 @@ import {
 } from "react-native";
 import { Calendar as CalendarComp } from "react-native-calendars";
 import { connect } from "react-redux";
-import { LinearGradient } from "expo";
+import { LinearGradient } from "expo-linear-gradient";
 import ApslButton from "apsl-react-native-button";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import { TopBar } from "../component";

@@ -12,7 +12,7 @@ import {
   deleteOnePicFromProgressAction,
   showDeleteConfirmModalInDisplayPictureAction,
 } from "../store/actions";
-import { LinearGradient } from "expo";
+import { LinearGradient } from "expo-linear-gradient";
 import GestureRecognizer, {
   swipeDirections,
 } from "react-native-swipe-gestures";
@@ -88,7 +88,7 @@ export class _DisplayPicture extends Component {
   }
 
   componentWillMount() {
-    const navProps = this.props?.navigation?.state?.params;
+    const navProps = this.props.navigation.state.params;
     this.setState({
       values: navProps,
       index: navProps.index,
@@ -125,7 +125,7 @@ export class _DisplayPicture extends Component {
   render() {
     // const this.state.values = this.props?.navigation?.state?.params;
     if (this.props.progressPics.length === 0) {
-      this.props?.navigation.navigate("Progress");
+      this.props.navigation.navigate("Progress");
       return (
         <View>
           <Text>NULL</Text>

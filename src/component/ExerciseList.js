@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { PureComponent } from "react";
 import {
   View,
@@ -11,26 +12,23 @@ import {
   Dimensions,
   Button,
   Modal,
-  Alert,
   TextInput,
 } from "react-native";
 import { connect } from "react-redux";
-import { LinearGradient } from "expo";
+import { LinearGradient } from "expo-linear-gradient";
 import ApslButton from "apsl-react-native-button";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import ModalDropdown from "react-native-modal-dropdown";
-import { TopBar } from "./TopBar";
+
 import { SearchBar } from "./SearchBar";
 import { fuzzySearch } from "../utils/fuzzySearch";
 import { AddDropdown } from "./AddDropdown";
 import {
-  addExerciseAction,
-  updateEmptyAction,
+
   addExerciseToSectionListAction,
   deleteExerciseFromSectionListAction,
 } from "../store/actions";
 import { ReminderModal } from "./ReminderModal";
-import InputScrollView from "react-native-input-scroll-view";
 
 const { width, height } = Dimensions.get("window");
 const isNotchScreen = height / width >= 18.5 / 9;

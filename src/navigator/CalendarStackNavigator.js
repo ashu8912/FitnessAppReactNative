@@ -5,7 +5,7 @@ import { EditHistory } from "../page/EditHistory";
 import { CurrentWorkout } from "../page/CurrentWorkout";
 import { Text, TouchableOpacity } from "react-native";
 import IconFontAwesome from "react-native-vector-icons/FontAwesome";
-import { LinearGradient } from "expo";
+import { LinearGradient } from "expo-linear-gradient";
 import { CalendarEditHistoryStackNavigator } from "./CalendarEditHistoryStackNavigator";
 
 export const CalendarStackNavigator = createStackNavigator({
