@@ -105,7 +105,7 @@ export class _CustomWorkout extends Component {
           }}>
           {/*<Image style={styles.image} source={{uri: props.item.photoURI}}/>*/}
           <View style={styles.alignVerAndHorCenter}>
-            {createIcons(item, index, "#eee")}
+            {/* {createIcons(item, index, "#eee")} */}
           </View>
           <View style={styles.alignVerAndHorCenter}>
             <Text

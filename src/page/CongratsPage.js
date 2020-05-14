@@ -44,7 +44,7 @@ export class CongratsPage extends Component {
             }}>
             Good Job!
           </Text>
-          <IconFont name={"Awards2"} size={200} color={"#c69"} />
+          {/* <IconFont name={"Awards2"} size={200} color={"#c69"} /> */}
         </View>
       </LinearGradient>
     );

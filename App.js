@@ -15,6 +15,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import * as Font from "expo-font";
 
 const { store, persistor } = getStore();
+console.disableYellowBox = true; 
 
 export default class App extends Component {
   state = {

@@ -108,7 +108,7 @@ export class _EditLibrary extends Component {
           }}>
           {/*<Image style={styles.image} source={{uri: props.item.photoURI}}/>*/}
           <View style={styles.alignVerAndHorCenter}>
-            {createIcons(item, index, "#c69")}
+            {/* {createIcons(item, index, "#c69")} */}
           </View>
           <View style={styles.alignVerAndHorCenter}>
             <Text
