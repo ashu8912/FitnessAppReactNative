@@ -10,7 +10,6 @@ export class TabBarIcon extends React.Component {
         style={{ marginBottom: -3, backgroundColor: "transparent" }}
         // color={this.props.focused ? "#c69" : "#666"}
         // color={this.props.focused ? this.props.tintColor : this.props.inactiveTintColor}
-        color={this.props.tintColor}
       />
     );
   }
